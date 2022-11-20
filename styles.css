@@ -1,0 +1,93 @@
+﻿
+
+
+*
+{
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+}
+
+body
+{
+  background-image: url(Monitor.jpg); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  font-family: sans-serif;
+}
+
+.top-menu{
+  text-align: center;
+  background: rgb(0, 148, 255);
+}
+
+.top-menu ul{
+ display: inline-flex;
+ list-style: none;
+ color: #fff;
+}
+.top-menu ul li{
+  width: 150px;
+  margin: 15px;
+  padding: 15px;
+}
+.top-menu ul li a{
+    text-decoration: none;
+    color: white;
+}
+.active{
+ background-color: rgb(100,0,255);
+ border-radius: 4px;
+}
+
+.active, .top-menu ul li:hover{
+    background: rgb(100, 0, 255);
+    border-radius: 4px;
+}
+
+.into-top-menu{
+    display: none;
+}
+
+.top-menu ul li:hover .into-top-menu{
+    display: block;
+    position: absolute;
+    background: rgb(100,0,255);
+    margin-top: 15px;
+    margin-left: -15px;
+}
+
+.top-menu ul li:hover .into-top-menu ul{
+    display: block;
+    margin: 10px;
+}
+
+.top-menu ul li:hover .into-top-menu ul li{
+    width: 100px;
+    padding: 10px;
+    border-bottom: 1px dotted #fff;
+    background: transparent;
+    border-radius: 0;
+    text-align: left;
+}
+
+.top-menu ul li:hover .into-top-menu ul li:last-child{
+    border-bottom: none;
+}
+
+.top-menu ul li:hover .into-top-menu ul li a:hover{
+    color: #b3ff00;
+}
+
+.into-top-menu2{
+    display: none;
+}
+
+.tohover:hover .into-top-menu2{
+           position: absolute;
+           display: block;
+           margin-top: -40px;
+           margin-left: 90px;
+           background: rgb(100, 0, 255);
+}
